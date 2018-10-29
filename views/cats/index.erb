@@ -1,0 +1,6 @@
+<a href="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3SsB88ObkB14RJhfRnjynAhBU5XXW14MJWeQqdCf40QWFdZZPXg" alt="" height="50" width="50"></a>
+<h1>Este es el club de gatos</h1>
+<% @cats.each do |cat| %>
+    <div><a href="/cats/<%= cat.id %>"><%= cat.name %></a></div>
+    <div><a href="/cats/<%= cat.id %>"><img src="<%= cat.image %>"></a></div>
+<% end %>
